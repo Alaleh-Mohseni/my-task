@@ -1,0 +1,15 @@
+.Input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-element {
+    outline: none;
+    border: 2px solid #cccccc;
+    background-color: #fff;
+    padding: 5px 4px;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    font-family: inherit;
+}

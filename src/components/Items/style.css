@@ -1,0 +1,14 @@
+.Items {
+    width: 100%;
+    padding: 16px;
+    border-bottom: 2px solid #ECF0F1;
+    overflow-y: scroll; 
+}
+
+.Items::-webkit-scrollbar {
+    display: none;
+}
+
+.item_tasks {
+    list-style: none;
+}

@@ -1,0 +1,19 @@
+.Header {
+    width: 100%;
+    padding: 32px 16px;
+    border-bottom: 2px solid #ECF0F1;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+.Header--dark {
+    box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+.title--dark {
+    color: #fff;
+}

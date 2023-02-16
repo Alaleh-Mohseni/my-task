@@ -1,0 +1,72 @@
+.Button {
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: #fff;
+    width: 50%;
+    height: 48px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.primary {
+    background-color: #F84546;
+    color: #fff;
+}
+
+.secondary {
+    background-color: #fff;
+    color: #F84546;
+    margin-left: 16px;
+}
+
+.primary:hover {
+    box-shadow: 0px 4px 12px 0px #F84546; 
+}
+
+.secondary:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.change-theme {
+    background-color: #F84546;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.remove-item {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: none;
+    background-color: #f0f0f0;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.remove-item:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #f84546;
+}
+
+
+.change-theme--dark {
+    border: 1px solid #F84546;
+    background-color: white;
+    color: #F84546;
+}
+
+.secondary--dark {
+    background-color: transparent;
+}
+
+.secondary--dark:hover {
+    box-shadow: 0px 4px 12px 0px rgba(190, 17, 17, 0.446);
+}

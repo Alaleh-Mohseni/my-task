@@ -1,0 +1,31 @@
+.Item {
+    list-style: none;
+    padding: 12px 8px;
+    /* height: 32px; */
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+/* .Item .item_button {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: none;
+    background-color: #f0f0f0;
+    color: #000;
+    transition: all 0.3s;
+}
+ */
+.Item:hover {
+    background-color: #f84546;
+    color: #fff;
+}
+
+/* .Item .item_button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #f84546;
+} */
