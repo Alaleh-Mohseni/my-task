@@ -22,11 +22,10 @@ function Actions({ onAdd, allTasks }) {
         if (!newName || newName === 0) {
             setError(true)
             return
-        } else if (newName) {
-            setDuplicateError(false)
+        } else if (allTasks.some(item => item.text === newName)) {
+            setDuplicateError(true)
             return
         }
-
 
         onAdd(newName)
         setNewName('')

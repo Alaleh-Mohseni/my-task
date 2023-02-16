@@ -1,6 +1,7 @@
 .Items {
     width: 100%;
     padding: 16px;
+    height: 500px;
     border-bottom: 2px solid #ECF0F1;
     overflow-y: scroll; 
 }
@@ -11,4 +12,9 @@
 
 .item_tasks {
     list-style: none;
+    overflow-y: scroll;
+}
+
+.item_tasks::-webkit-scrollbar {
+    display: none;
 }

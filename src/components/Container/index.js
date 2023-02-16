@@ -26,6 +26,8 @@ function Container() {
     const [tasks, setTasks] = useState(initialTasks)
     const [searchQuery, setSearchQuery] = useState('')
 
+    const allTasks = [...tasks]
+
     function handleAdd(text) {
         setTasks([...tasks, {id: `${Math.floor(Math.random() * 1000)}`, text}])
     }
@@ -43,11 +45,12 @@ function Container() {
         item => item.text.toUpperCase().startsWith(searchQuery.toUpperCase())
     )
 
+
     return (
         <main className={darkMode("Container", theme)}>
             <Header onChange={changeHandler} searchQuery={searchQuery}  />
             <Items tasks={searchResultTasks} onDelete={handleDelete}/>
-            <Actions onAdd={handleAdd}/> 
+            <Actions onAdd={handleAdd} allTasks={allTasks}/> 
         </main>
     )
 }
