@@ -26,7 +26,6 @@ function Input(props) {
     return (
         <div className='Input'>
             {inputElement}
-            {/* {props.children} */}
         </div>
     )
 }

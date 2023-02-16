@@ -13,3 +13,11 @@
     border-radius: 2px;
     font-family: inherit;
 }
+
+.input-element:focus {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0px 2px #99caff;
+    padding: 5px 4px;
+}
