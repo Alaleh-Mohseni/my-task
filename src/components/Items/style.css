@@ -18,3 +18,7 @@
 .item_tasks::-webkit-scrollbar {
     display: none;
 }
+
+.Items--dark {
+    border-bottom: 1px solid #cccccc;
+}

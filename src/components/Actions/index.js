@@ -45,8 +45,7 @@ function Actions({ onAdd, allTasks }) {
             {duplicateError && <p className='parag'>این کار قبلا اضافه شده است</p>}
             <div className='button-box'>
                 <Button
-                    btnType="secondary"
-                    // className={`${darkMode("secondry", theme)}`}
+                    btnType={darkMode("secondary", theme)}
                     click={handleCancel}
                 >
                     منصرف شدم

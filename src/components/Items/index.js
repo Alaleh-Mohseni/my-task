@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { themeContext } from '../../contexts/theme';
+import darkMode from '../../darkMode'
 import './style.css';
 import Item from '../Item';
 
 function Items({tasks, onDelete}) {
+    const theme = useContext(themeContext)
+
     function renderResults() {
         if (tasks.length === 0) {
             return <p className='parag'>کاری پیدا نشد</p>
@@ -19,7 +24,7 @@ function Items({tasks, onDelete}) {
     }
 
     return (
-        <div className="Items">
+        <div className={darkMode("Items", theme)}>
             <ul className='item_tasks'>
                 {renderResults()}
             </ul>

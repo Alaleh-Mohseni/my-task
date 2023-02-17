@@ -19,7 +19,9 @@ function App() {
 
   return (
     <div className={darkMode('App', theme)}>
-      <Button btnType="change-theme" onClick={toggleTheme}>
+      <Button
+        btnType={darkMode("change-theme", theme)}
+        click={toggleTheme}>
         CT
       </Button>
       <themeContext.Provider value={theme}>

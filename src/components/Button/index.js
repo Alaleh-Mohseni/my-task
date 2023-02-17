@@ -6,7 +6,7 @@ import './style.css';
 
 function Button(props) {
     const theme = useContext(themeContext)
-
+    
     return (
         <button className={`${darkMode("Button", theme)} ${props.btnType}`} onClick={props.click}>
             {props.children}

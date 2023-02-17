@@ -13,3 +13,11 @@
     background-color: #f84546;
     color: #fff;
 }
+
+.Item--dark {
+    color: white;
+}
+
+.Item--dark:hover {
+    background-color: #f845458c;
+}
